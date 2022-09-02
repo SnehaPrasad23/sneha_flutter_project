@@ -28,15 +28,15 @@ class _AttendanceState extends State<Attendance> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: [
-            CircleAvatar(
-              backgroundImage: AssetImage('images/nsutlogo.jpg'),
-              radius:50.0,
-            ),
-            Column(
-            children: Sublist.map((subcard) => TextCard(textcard: subcard)).toList(),
-            ),
-        ]
+            children: [
+              CircleAvatar(
+                backgroundImage: AssetImage('images/nsutlogo.jpg'),
+                radius:50.0,
+              ),
+              Column(
+                children: Sublist.map((subcard) => TextCard(textcard: subcard)).toList(),
+              ),
+            ]
         ),
       ),
     );

@@ -25,73 +25,73 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.cyan[100],
       appBar: AppBar(
-        title: Text('SEMESTER-3'),
-        centerTitle: true,
-        backgroundColor: Colors.deepPurple[400],
-        actions: [
-          Theme(
-            data: Theme.of(context).copyWith(
-              dividerColor: Colors.white,
-              iconTheme: IconThemeData(color: Colors.white),
-            ),
-            child: PopupMenuButton<int>(
-              color: Colors.amber[200],
-              onSelected: (item) => onSelected(context, item),
-              itemBuilder: (context) => [
-                PopupMenuItem<int>(
-                  value: 0,
-                  child: Row(
-                    children: [
-                      Icon(Icons.person,color: Colors.black),
-                      SizedBox(width: 5.0),
-                      Text(
-                          'Profile',
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 0.5,
-                          )
+          title: Text('SEMESTER-3'),
+          centerTitle: true,
+          backgroundColor: Colors.deepPurple[400],
+          actions: [
+            Theme(
+              data: Theme.of(context).copyWith(
+                dividerColor: Colors.white,
+                iconTheme: IconThemeData(color: Colors.white),
+              ),
+              child: PopupMenuButton<int>(
+                  color: Colors.amber[200],
+                  onSelected: (item) => onSelected(context, item),
+                  itemBuilder: (context) => [
+                    PopupMenuItem<int>(
+                      value: 0,
+                      child: Row(
+                        children: [
+                          Icon(Icons.person,color: Colors.black),
+                          SizedBox(width: 5.0),
+                          Text(
+                              'Profile',
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                letterSpacing: 0.5,
+                              )
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-                PopupMenuDivider(),
-                PopupMenuItem<int>(
-                  value: 1,
-                  child: Row(
-                    children: [
-                      Icon(Icons.calendar_month,color: Colors.black),
-                      SizedBox(width: 5.0),
-                      Text(
-                        'Time Table',
-                        style: TextStyle(
-                        fontSize: 20.0,
-                        letterSpacing: 0.5,
-                      )
+                    ),
+                    PopupMenuDivider(),
+                    PopupMenuItem<int>(
+                      value: 1,
+                      child: Row(
+                        children: [
+                          Icon(Icons.calendar_month,color: Colors.black),
+                          SizedBox(width: 5.0),
+                          Text(
+                              'Time Table',
+                              style: TextStyle(
+                                fontSize: 20.0,
+                                letterSpacing: 0.5,
+                              )
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-                PopupMenuDivider(),
-                PopupMenuItem<int>(
-                  value: 2,
-                  child: Row(
-                    children: [
-                      Icon(Icons.start_outlined,color: Colors.black),
-                      SizedBox(width: 5.0),
-                      Text(
-                        'Attendance',
-                        style: TextStyle(
-                        fontSize: 20.0,
-                        letterSpacing: 0.5,
-                        ),
+                    ),
+                    PopupMenuDivider(),
+                    PopupMenuItem<int>(
+                      value: 2,
+                      child: Row(
+                        children: [
+                          Icon(Icons.start_outlined,color: Colors.black),
+                          SizedBox(width: 5.0),
+                          Text(
+                            'Attendance',
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-              ]
-            ),
-          )
-        ]
+                    ),
+                  ]
+              ),
+            )
+          ]
       ),
 
       body: Padding(
@@ -116,11 +116,11 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context,'/profile');
               },
               label: Text(
-                'Profile',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  letterSpacing: 2.0,
-                )
+                  'Profile',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    letterSpacing: 2.0,
+                  )
               ),
               icon: Icon(Icons.account_box_rounded),
               color: Colors.orange[100],
@@ -131,11 +131,11 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context,'/timetable');
               },
               label: Text(
-                'Time Table',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  letterSpacing:2.0,
-                )
+                  'Time Table',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    letterSpacing:2.0,
+                  )
               ),
               icon: Icon(Icons.access_time_filled_rounded),
               color: Colors.orange[100],
@@ -146,11 +146,11 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context,'/attendance');
               },
               label: Text(
-                'Attendance',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  letterSpacing: 2.0,
-                )
+                  'Attendance',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    letterSpacing: 2.0,
+                  )
               ),
               icon: Icon(Icons.accessibility_new_sharp),
               color: Colors.orange[100],
